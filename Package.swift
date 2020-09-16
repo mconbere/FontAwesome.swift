@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
@@ -9,7 +9,17 @@ let package = Package(
     targets: [
         .target(
             name: "FontAwesome",
-            path: "FontAwesome"
-        ),
+            path: "FontAwesome",
+            exclude: [
+                "Font Awesome 5 Brands-Regular-400.otf",
+                "Font Awesome 5 Free-Regular-400.otf",
+                "Font Awesome 5 Free-Solid-900.otf",
+                "Info.plist"
+            ],
+            resources: [
+                .process("Font Awesome 5 Brands-Regular-400.otf"),
+                .process("Font Awesome 5 Free-Regular-400.otf"),
+                .process("Font Awesome 5 Free-Solid-900.otf")
+            ]),
     ]
 )
