@@ -11,9 +11,6 @@ let package = Package(
             name: "FontAwesome",
             path: "FontAwesome",
             exclude: [
-                "Font Awesome 5 Brands-Regular-400.otf",
-                "Font Awesome 5 Free-Regular-400.otf",
-                "Font Awesome 5 Free-Solid-900.otf",
                 "Info.plist"
             ],
             resources: [
