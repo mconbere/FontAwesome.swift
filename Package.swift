@@ -14,8 +14,8 @@ let package = Package(
                 "Info.plist"
             ],
             resources: [
-                .process("Font Awesome 5 Brands-Regular-400.otf"),
-                .process("Font Awesome 5 Free-Regular-400.otf"),
+                //.process("Font Awesome 5 Brands-Regular-400.otf"),
+                //.process("Font Awesome 5 Free-Regular-400.otf"),
                 .process("Font Awesome 5 Free-Solid-900.otf")
             ]),
     ]
